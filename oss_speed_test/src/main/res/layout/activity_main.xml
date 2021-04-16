@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="初始化中"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_name"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:hint="请输入姓名,方便统计测试结果"-->
+<!--        android:lines="1"-->
+<!--        android:textSize="15dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tv_status" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="测试说明：
+        \n本次测试目的是测试不同网络环境中OSS上传和下载速度
+        \n测试的维度有：
+        \n网络类型(wifi 4G)、网络质量(4G信号强弱)、测试场地(公司 家里 随机地点)
+        \n每测试一组就记录一组，格式为：测试地点+网络类型+网络质量+测试结果(上传用时、速度、大小，下载用时、速度、大小)
+"
+        />
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_address"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:hint="请输入测试场地及网络名称，例如：(公司wifi：zq_shangwu_5g)"-->
+<!--        android:lines="1"-->
+<!--        android:textSize="15dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/et_name" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

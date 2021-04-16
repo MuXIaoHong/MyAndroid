@@ -1,0 +1,2 @@
+# Android 连接设备wifi情况下使用移动网络demo
+demo用到了Insta360全景相机和阿里云OSS

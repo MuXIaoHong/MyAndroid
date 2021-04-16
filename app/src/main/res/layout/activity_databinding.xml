@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="androidx.databinding.ObservableField" />
+        <import type="androidx.lifecycle.MutableLiveData" />
+        <import type="com.nan.myandroid.databinding.MyViewModel"/>
+        <import type="com.nan.myandroid.databinding.User"/>
+
+        <variable
+            name="two_way"
+            type="ObservableField&lt;String>" />
+        <variable
+            name="two_way_livedata"
+            type="MutableLiveData&lt;String>" />
+        <variable
+            name="two_way_user_livedata"
+            type="MutableLiveData&lt;User>" />
+        <variable
+            name="vm"
+            type="MyViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".databinding.DataBindingActivity">
+        <!--        普通String类型ObservableField的双向绑定-->
+        <EditText
+            android:id="@+id/et_two_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@={two_way}" />
+
+        <Button
+            android:id="@+id/btn_check_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检查数据源数值" />
+        <!--        普通String类型ObservableField的双向绑定-->
+
+        <!--        普通String类型MutableLiveData的双向绑定-->
+        <EditText
+            android:id="@+id/et_two_way_livedata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@={two_way_livedata}"
+            />
+
+        <Button
+            android:id="@+id/btn_check_value_livedata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检查数据源数值" />
+        <!--        普通String类型MutableLiveData的双向绑定-->
+
+        <com.nan.myandroid.databinding.MyView01
+            android:id="@+id/myview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.nan.myandroid.databinding.MyView02
+            android:id="@+id/myview01"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            data="@={vm.vmObservableField}"
+            user="@={vm.user}"
+            users="@={vm.users}"
+            />
+        <Button
+            android:id="@+id/btn_check_value_viewmodel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检查数据源数值" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</layout>

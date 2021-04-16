@@ -1,0 +1,1 @@
+int bdd(int a,int b);

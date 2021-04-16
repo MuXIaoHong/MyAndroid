@@ -1,0 +1,11 @@
+include ':oss_speed_test'
+include ':doublenetwork'
+//include ':cpp_exercise'
+//include ':import_static_with_depend'
+//include ':staticlib'
+//include ':hello-jni-callback'//lib.include ':test'
+//include ':hello-jni'
+//lib.include ':ndk'
+//lib.include ':jni'
+include ':app'
+rootProject.name = "My Android"

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Android</string>
+    <string name="title_activity_view">ActivityView</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="account_for_request_battery_ignore">拒绝应用后台运行会导致APP在后台运行过程中被系统杀死，从而导致不能及时收到带看请求，确定要拒绝此权限吗？</string>
+
+</resources>
